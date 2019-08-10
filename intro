@@ -78,7 +78,7 @@ bracket notation. Here is an example with a two-dimensional array (e.g., a matri
    (2, 3)   
    "this indicates that a as two rows and three columns"
        
-    "initially we had used the type attribute to find the type of an object, there is another attribute to be uses when one wants to find out the type of a data in an object"
+    "initially we had used the type attribute to find the type of an object, there is another attribute to be used when one wants to find out the type of  data in an array object"
     "input"
     a.dtype
     
