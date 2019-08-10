@@ -5,7 +5,7 @@ Created on Sat Aug 10 23:24:16 2019
 """
 
 
-"to import numpy into your project here you use the import statement and give numpy an alias to be used,e.g np"
+"to import numpy into your project , you will use the import statement and give numpy an alias to be used,e.g np"
 "input"
 import numpy as np
 
@@ -15,6 +15,7 @@ float or int. Arrays make operations with large amounts of numeric data very fas
 generally much more efficient than lists."
 
 "to create an array give the array a variable name,e.g a,b,c, then  assign the numpy array object to the given name"
+"in the example below we assigned a datatype, i.e float to the array"
 "input"
  a = np.array([1, 4, 5, 8], float)
  
@@ -23,4 +24,12 @@ generally much more efficient than lists."
   
   "output"
   array([ 1., 4., 5., 8.])
+  
+  
+  "to find out the type of object an output or input variable  is e.g , what type of data is the variable a above?"
+  "input"
+   type(a)
+   
+   "output"
+   type 'numpy.ndarray'
   
