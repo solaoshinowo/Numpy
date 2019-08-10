@@ -46,3 +46,31 @@ elements and whose second axis has two elements:"
    
    "output"
     (5, 2)
+
+  "Notice that the reshape function creates a new array and does not itself modify the original
+array. "
+
+"Now lets attempt to change a particular value in an array, in this example the first value, i.e 1"
+
+"input"
+ a = np.array([1, 2, 3], float)
+ a[0] = 0
+  a
+ "output"
+ array([0., 2., 3.])
+ 
+ 
+ "we can fill an array with a single value:"
+ 
+ "input"
+ a = array([1, 2, 3], float)
+  a
+  "output"
+  array([ 1., 2., 3.])
+  
+  "input"
+   a.fill(0)
+   a
+   "output"
+   array([ 0., 0., 0.])
+ 
