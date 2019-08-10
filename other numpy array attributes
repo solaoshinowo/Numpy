@@ -74,3 +74,50 @@ array. "
    "output"
    array([ 0., 0., 0.])
  
+
+"Transposed versions of arrays can also be generated, which will create a new array with the
+final two axes switched:"
+
+"input"
+ a = np.array(range(6), float).reshape((2, 3))
+ a
+ 
+ "output"
+ array([[ 0., 1., 2.],
+ [ 3., 4., 5.]])
+ 
+ "input"
+ a.transpose()
+ 
+ "output"
+ array([[ 0., 3.],
+ [ 1., 4.],
+ [ 2., 5.]])
+ 
+ 
+ "One-dimensional versions of multi-dimensional arrays can be generated with flatten:"
+ "input"
+  a = np.array([[1, 2, 3], [4, 5, 6]], float)
+   a
+   
+   "output"
+   array([[ 1., 2., 3.],
+         [ 4., 5., 6.]])
+  
+  "input"
+  a.flatten()
+  
+  "output"
+  array([ 1., 2., 3., 4., 5., 6.])
+  
+  
+  "Two or more arrays can be concatenated together using the concatenate function with a
+tuple of the arrays to be joined:"
+"input"
+a = np.array([1,2], float)
+b = np.array([3,4,5,6], float)
+c = np.array([7,8,9], float)
+
+"output"
+([1., 2., 3., 4., 5., 6., 7., 8., 9.])
+ 
