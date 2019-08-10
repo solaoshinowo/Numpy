@@ -21,3 +21,28 @@ len(a)
    
    "output"
    False
+
+  "Arrays can be reshaped using tuples that specify new dimensions. In the following example, we
+turn a ten-element one-dimensional array into a two-dimensional one whose first axis has five
+elements and whose second axis has two elements:"
+
+"input"
+ a = np.array(range(10), float)
+  a
+  array([ 0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])
+   a = a.reshape((5, 2))
+    a
+  "output"
+  array([[ 0., 1.],
+         [ 2., 3.],
+         [ 4., 5.],
+         [ 6., 7.],
+         [ 8., 9.]])
+         
+  "so now, if we want to find out the current shape of a "
+  
+  "input"
+   a.shape
+   
+   "output"
+    (5, 2)
