@@ -1,0 +1,26 @@
+"""
+Created on Sat Aug 10 23:24:16 2019
+
+@author: sola
+"""
+
+
+"to import numpy into your project here you use the import statement and give numpy an alias to be used,e.g np"
+"input"
+import numpy as np
+
+"The central feature of NumPy is the array object class. Arrays are similar to lists in Python,
+except that every element of an array must be of the same type, typically a numeric type like
+float or int. Arrays make operations with large amounts of numeric data very fast and are
+generally much more efficient than lists."
+
+"to create an array give the array a variable name,e.g a,b,c, then  assign the numpy array object to the given name"
+"input"
+ a = np.array([1, 4, 5, 8], float)
+ 
+ "input"
+  a
+  
+  "output"
+  array([ 1., 4., 5., 8.])
+  
