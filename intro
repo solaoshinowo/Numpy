@@ -33,3 +33,54 @@ generally much more efficient than lists."
    "output"
    type 'numpy.ndarray'
   
+   "just like lists, you can locate a particular object from the array object, to do so, 0 is the first index of the array,1 is second,etc"
+   "input"
+   a[3]
+   
+   "output"
+   8.0
+   
+   
+   "Now lets look at differences between arrays and lists that makes arrays more powerful"
+   "Arrays can be multidimensional. Unlike lists, different axes are accessed using commas inside
+bracket notation. Here is an example with a two-dimensional array (e.g., a matrix):"
+
+"input"
+ a = np.array([[1, 2, 3], [4, 5, 6]], float)
+ 
+ "input"
+  a
+  
+  "output"
+  array([[ 1., 2., 3.],
+        [ 4., 5., 6.]])
+        
+ "if you want to access the value in the first row, first column"
+ "input"
+  a[0,0]
+  
+  "output"
+  1.0
+  
+  
+  "if you want to access the value in the first row, second column"
+  "input"
+  a[0,1]
+  
+  "output"
+   2.0 
+   
+   "The shape property of an array returns a tuple with the size of each array dimension:"
+   "input"
+   a.shape
+   
+   "output"
+   (2, 3)   
+   "this indicates that a as two rows and three columns"
+       
+    "initially we had used the type attribute to find the type of an object, there is another attribute to be uses when one wants to find out the type of a data in an object"
+    "input"
+    a.dtype
+    
+    "output"
+    dtype('float64')
