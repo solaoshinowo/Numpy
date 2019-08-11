@@ -1,0 +1,70 @@
+Created on Sat Aug 10 23:24:16 2019
+
+@author: sola
+"""
+
+
+
+
+"When standard mathematical operations are used with arrays, they are applied on an elementby-element basis. This means that the arrays should be the same size during addition,
+subtraction, etc.:"
+
+"input"
+import numpy as np
+a = np.array([1,2,3], float)
+b = np.array([5,2,6], float)
+a + b 
+
+
+"output"
+([6., 4., 9.])
+
+
+"input"
+ a – b
+ 
+ "output"
+ ([-4., 0., -3.])
+ 
+ "input"
+ a * b
+ 
+ "output"
+ ([5., 4., 18.])
+ 
+ "input"
+  b / a
+  
+  "output"
+  ([5., 1., 2.])
+  
+  "input"
+   a % b
+
+ "output"
+ ([1., 0., 3.])
+ 
+ 
+ "For two-dimensional arrays, multiplication remains elementwise and does not correspond to
+matrix multiplication. There are special functions for matrix math that we will cover later."
+
+"input"
+ a = np.array([[1,2], [3,4]], float)
+ b = np.array([[2,0], [1,3]], float)
+ a * b
+ 
+ "output"
+ ([[2., 0.], [3., 12.]])
+ 
+ 
+ "Errors are thrown if arrays do not match in size:"
+ 
+ "input"
+  a = np.array([1,2,3], float)
+  b = np.array([4,5], float)
+  c=b+a
+  print(c)
+  
+  "output"
+  ValueError: operands could not be broadcast together with shapes (2,) (3,) 
+ 
