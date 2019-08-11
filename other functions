@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 11 01:36:56 2019
+
+@author: sola
+"""
+
+
+"sqrt this is the square root function"
+
+"input"
+ a = np.array([1, 4, 9], float)
+ np.sqrt(a)
+ 
+ "output"
+ ([ 1., 2., 3.])
+ 
+ 
+ "The functions floor, ceil, and rint give the lower, upper, or nearest (rounded) integer:"
+ "input"
+ a = np.array([1.1, 1.5, 1.9], float)
+ np.floor(a)
+ 
+ 
+ "output"
+ ([ 1., 1., 1.])
+ 
+ "input"
+ np.ceil(a)
+ 
+ "output"
+ ([ 2., 2., 2.])
+ 
+ "input"
+ np.rint(a)
+ 
+ "output"
+ ([ 1., 2., 2.])
+ 
+ 
+ "Also included in the NumPy module are two important mathematical constants:"
+ 
+ "input"
+  np.pi
+  
+  "output"
+  3.1415926535897931
+  
+  "input"
+   np.e
+   
+   "output"
+   2.7182818284590451
