@@ -1,4 +1,5 @@
 "When used with an array, the len function returns the length of the first axis:,this is used to find the length of the array"
+"please take note, depending on the python ide you are using, you might have to use the print statement to get outputs,
 "input"
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
 
@@ -117,7 +118,22 @@ tuple of the arrays to be joined:"
 a = np.array([1,2], float)
 b = np.array([3,4,5,6], float)
 c = np.array([7,8,9], float)
-
+np.concatenate((a, b, c))
 "output"
 ([1., 2., 3., 4., 5., 6., 7., 8., 9.])
  
+
+"If an array has more than one dimension, it is possible to specify the axis along which multiple
+arrays are concatenated. By default (without specifying the axis), NumPy concatenates along
+the first dimension:"
+
+"input"
+ a = np.array([[1, 2], [3, 4]], float)
+ b = np.array([[5, 6], [7,8]], float)
+ np.concatenate((a,b))
+ 
+ "output"
+ ([[ 1., 2.],
+ [ 3., 4.],
+ [ 5., 6.],
+ [ 7., 8.]])
